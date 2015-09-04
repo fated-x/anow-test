@@ -1,0 +1,24 @@
+{
+  "name": "ng-card",
+  "version": "0.1.0",
+  "description": "Angular Recurly Card Directive",
+  "main": "karma.conf.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "karma start"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "karma": "^0.13.9",
+    "karma-coverage": "^0.5.0",
+    "karma-mocha": "^0.2.0",
+    "karma-ng-html2js-preprocessor": "^0.1.2",
+    "karma-phantomjs-launcher": "^0.2.1",
+    "karma-sinon-chai": "^1.0.0",
+    "mocha": "^2.2.5",
+    "phantomjs": "^1.9.18"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "angularRecurly",
+  "version": "0.1.0",
+  "homepage": "https://github.com/lorem--ipsum/smashing-article",
+  "authors": [
+    "Jim Wright <jim@anow.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.4",
+    "angular-mocks": "~1.4.4"
+  },
+  "devDependencies": {
+    "jquery": "~2.1.4"
+  }
+}

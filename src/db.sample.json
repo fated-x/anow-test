@@ -1,0 +1,15 @@
+{
+  "scores": [
+    {
+      "winner": "Krista",
+      "loser": "Sarah",
+      "date": "2015-08-27T15:00"
+    },
+    {
+      "winner": "Jim",
+      "loser": "Dan",
+      "date": "2015-09-03T13:00",
+      "id": "0d71a560-08ea-4480-8dbd-f668595e0b23"
+    }
+  ]
+}
