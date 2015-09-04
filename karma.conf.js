@@ -18,7 +18,6 @@ module.exports = function(config) {
       'src/components/angular/angular.js',
       'src/components/angular-mocks/angular-mocks.js',
       'src/components/jquery/dist/jquery.js',
-      'https://js.recurly.com/v3/recurly.js',
       'src/app.js',
       'test/**/*Spec.js',
       'src/tpl/**/*.html'
@@ -42,7 +41,7 @@ module.exports = function(config) {
     },
     ngHtml2JsPreprocessor: {
       stripPrefix: 'src',
-      moduleName: 'recurlyTemplates'
+      moduleName: 'anowTemplates'
     },
 
 

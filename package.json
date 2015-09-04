@@ -1,7 +1,7 @@
 {
   "name": "ng-card",
   "version": "0.1.0",
-  "description": "Angular Recurly Card Directive",
+  "description": "",
   "main": "karma.conf.js",
   "directories": {
     "test": "test"
