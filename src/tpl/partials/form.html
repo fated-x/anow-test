@@ -1,0 +1,38 @@
+<div class="form-group">
+  <label for="form-date" class="col-sm-4 control-label">Date</label>
+  <div class="col-sm-4">
+    <input type="text" class="form-control" ng-model="score.date" placeholder="Date (ex: 2015-09-25)" id="form-date">
+  </div>
+</div>
+<div class="form-group">
+  <label for="form-p1Name" class="p1 col-sm-4 control-label">Player 1 Name</label>
+  <div class="col-sm-4">
+    <input type="text" class="form-control" ng-model="score.p1Name" id="form-p1Name" placeholder="Player 1 First Name" required>
+  </div>
+</div>
+<div class="form-group">
+  <label for="form-p1Score" class="p1 col-sm-4 control-label">Player 1 Score</label>
+  <div class="col-sm-4">
+    <input type="text" class="form-control" ng-model="score.p1Score" id="form-p1Score" placeholder="Player 1 Score" required>
+  </div>
+</div>
+<div class="form-group">
+  <label for="form-p2Name" class="p2 col-sm-4 control-label">Player 2 Name</label>
+  <div class="col-sm-4">
+    <input type="text" class="form-control" ng-model="score.p2Name" id="form-p2Name" placeholder="Player 2 First Name" required>
+  </div>
+</div>
+<div class="form-group">
+  <label for="form-p2Score" class="p2 col-sm-4 control-label">Player 2 Score</label>
+  <div class="col-sm-4">
+    <input type="text" class="form-control" ng-model="score.p2Score" id="form-p2Score" placeholder="Player 2 Score" required>
+  </div>
+</div>
+<div class="form-group">
+  <div class="col-sm-offset-4 col-sm-1">
+    <button type="submit" class="btn btn-success">Save</button>
+  </div>
+  <div class="col-sm-1">
+    <button type="button" class="btn btn-warning" ui-sref="scores">Cancel</button>
+  </div>
+</div>

@@ -1,0 +1,160 @@
+/* Space out content a bit */
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.footer {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/* Custom page header */
+.header {
+  padding-bottom: 20px;
+  border-bottom: 2px solid #88c540;
+}
+
+.nav {
+  margin-top: 35px;
+}
+.nav a {
+  cursor: pointer;
+}
+.nav ul {
+  margin-top: 0;
+  border-top: 2px solid #88c540;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.nav li {
+  list-style: none;
+}
+nav li span {
+  color: #337ab7;
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 2px solid #88c540;
+}
+.site-footer {
+  color: #6b6a69;
+}
+.site-footer .inside i {
+  font-size: 21px;
+}
+.copyfooter {
+  color: #999;
+}
+
+div.smicons a i {
+  padding-left: 10px;
+}
+.smicons {
+  width: 100%;
+  margin-top: 20px;
+}
+@media (min-width: 740px) {
+  .smicons {
+    float: right;
+    width: inherit;
+    margin-top: -9px;
+  }
+}
+
+/* Customize container */
+@media (min-width: 768px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.nav-pills>li.active>a,
+.nav-pills>li.active>a:focus,
+.nav-pills>li.active>a:hover {
+  background-color: #88c540;
+}
+
+.table {
+  margin-top: 40px;
+  text-align: center;
+}
+th {
+  text-align: center;
+}
+.table>tbody>tr>td,
+.table>tbody>tr>th,
+.table>tfoot>tr>td,
+.table>tfoot>tr>th,
+.table>thead>tr>td,
+.table>thead>tr>th {
+  vertical-align: middle;
+}
+
+/* Hide the logo when the screen width is small */
+.logo,
+.paddle-icon {
+  display: none;
+  height: 110px;
+}
+.header .fa-plus {
+  display: none;
+  font-size: 35px;
+  color: #494949;
+  margin-left: 13px;
+}
+@media screen and (min-width: 515px) {
+  .paddle-icon
+  {
+    display: inline-block;;
+  }
+}
+@media screen and (min-width: 690px) {
+  .logo,
+  .header .fa-plus {
+    display: inline-block;;
+  }
+}
+
+.form-horizontal {
+  margin-top: 30px;;
+}
+.p1 {
+  color: #337ab7;
+}
+.p2 {
+  color: #d9534f;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  .jumbotron h1 {
+    font-size: 60px;
+  } 
+  /* Remove the padding we set earlier */
+  .header,
+  .footer {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+    padding-top: 25px;
+  }
+}

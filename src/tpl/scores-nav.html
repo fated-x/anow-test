@@ -1,0 +1,5 @@
+<li ng-repeat="score in scores | orderBy:orderProp">
+  <a ui-sref="editScore({id:score.id})">
+    <strong>{{score.date}}</strong><br><span>{{score.p1Name}} vs {{score.p2Name}}</span>
+  </a>
+</li>

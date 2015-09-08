@@ -1,8 +1,22 @@
-<table>
-  <tr><th>Winner</th><th>Loser</th><th>Match Date</th></tr>
-  <tr ng-repeat="score in scores">
-    <td>{{score.winner}}</td>
-    <td>{{score.loser}}</td>
-    <td>{{score.date}}</td>
-  </tr>
+<table class="table table-bordered table-hover">
+    <thead>
+        <tr>
+          <th>Date</th>
+          <th>Player 1</th>
+          <th>Player 2</th>
+          <th>Winner</th>
+          <th><a ui-sref="addScore"><i class="fa fa-plus"></i></a></th>
+          <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="score in scores | orderBy:orderProp">
+          <td>{{score.date}}</td>
+          <td>{{score.p1Name}}<br><strong>{{score.p1Score}}</strong></td>
+          <td>{{score.p2Name}}<br><strong>{{score.p2Score}}</strong></td>
+          <td class="success"><strong>{{score.winner}}</strong></td>
+          <td><a ui-sref="editScore({id:score.id})"><i class="fa fa-pencil"></i></a></td>
+          <td><a class="btn btn-danger" ng-click="deleteScore(score)"><i class="fa fa-times-circle"></i> Delete</a></td>
+        </tr>
+    </tbody>
 </table>

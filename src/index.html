@@ -1,12 +1,69 @@
-<html>
-<head>
-  <title>Anow Pong</title>
-</head>
-<body>
-  <div ng-app="anowPong">
-    <pong-scores></pong-scores>
-  </div>
-  <script src="/components/angular/angular.js"></script>
-  <script src="/app.js"></script>
-</body>
+<html lang="en" ng-app="anowPong">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Anow Table Tennis Championships</title>
+    <link rel="icon" href="/favicon.ico">
+    <link rel="stylesheet" href="/components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/components/fontawesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="header clearfix">
+        <nav>
+          <ul class="nav nav-pills pull-right">
+            <li id="nav-home" role="presentation"><a ui-sref="scores">Home</a></li>
+            <li id="nav-add" role="presentation"><a ui-sref="addScore">Add New Score</a></li>
+            <li id="nav-edit" role="presentation" class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="" role="button" aria-haspopup="true" aria-expanded="false">
+                Edit Score <span class="caret"></span>
+              </a>
+              <ul ui-view="scores-nav" class="dropdown-menu"></ul>
+            </li>
+          </ul>
+        </nav>
+        <img class="logo" src="/img/anow-logo.png" alt="Anow company logo">
+        <i class="fa fa-plus"></i>
+        <img class="paddle-icon" src="/img/paddle_icon.png" alt="Anow company logo">
+      </div>
+      
+      <div class="jumbotron">
+        <h1>Table Tennis Championships</h1>
+        <h2 class="text-muted">Singles Game Results</h2>
+        <div ui-view="main"></div>
+      </div>
+      
+      <footer id="colophon" class="footer site-footer" role="contentinfo" itemscope="itemscope" itemtype="http://schema.org/WPFooter">
+        <div class="site-info">
+          <div class="inside">
+            <span class="copyfooter">© 2015 Appraisers Now ltd. 1-800-403-7121 All Rights Reserved.<br/></span>
+            <a href="http://anow.com/terms-conditions" target="_blank">Terms &amp; Conditions</a> /
+            <a href="http://anow.com/privacy-policy" target="_blank">Privacy Policy</a> /
+            <a href="http://anow.com/blog" target="_blank">Blog</a> /
+            <a href="http://anow.com/about" target="_blank">About</a> /
+            <a href="http://anow.com/about#faq" target="_blank">FAQ</a> 
+            <div class="smicons">FOLLOW US
+              <a href="https://facebook.com/appraisersnow" target="_blank"><i class="fa fa-facebook"></i></a>
+              <a href="https://twitter.com/AppraisersNow" target="_blank"><i class="fa fa-twitter"></i></a>
+              <a href="https://plus.google.com/u/0/+AnowCa" target="_blank"><i class="fa fa-google-plus"></i></i>
+              <a href="https://www.linkedin.com/company/appraisers-now" target="_blank"><i class="fa fa-linkedin"></i></a>
+              <a href="https://youtube.com/appraisersoftware" target="_blank"><i class="fa fa-youtube"></i></a>
+            </div>
+          </div>
+        </div> 
+      </footer>
+    </div>
+    
+    <script src="/components/jquery/dist/jquery.min.js"></script>
+    <script src="/components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="/components/angular/angular.min.js"></script>
+    <script src="/components/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="/components/angular/angular-resource.min.js"></script>
+    <script src="/js/services.js"></script>
+    <script src="/js/controllers.js"></script>
+    <script src="/js/app.js"></script>
+  </body>
 </html>
